@@ -1,7 +1,7 @@
 **CSI 3150 Final Project Submission Template W26**  
 **Name:** Nicholas Hanna  
 **Project Option Chosen:** Nexus E-Commerce Suite  
-**Live App URL: [https://csi-3150final.vercel.app/](https://csi-3150final.vercel.app/)**  
+**Live App URL: [https://csi-3150-final.vercel.app/](https://csi-3150-final.vercel.app)**  
 **GitHub Repository URL: [https://github.com/nicholashanna2/CSI3150final](https://github.com/nicholashanna2/CSI3150final)**  
 **1\. Technical Report & User Manual**   
 **1.1 Project Overview (3 pts)**   

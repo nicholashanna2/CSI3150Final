@@ -2,7 +2,7 @@
 **Name:** Nicholas Hanna  
 **Project Option Chosen:** Nexus E-Commerce Suite  
 **Live App URL: [https://csi-3150-final.vercel.app/](https://csi-3150-final.vercel.app)**  
-**GitHub Repository URL: [https://github.com/nicholashanna2/CSI3150final](https://github.com/nicholashanna2/CSI3150final)**  
+**GitHub Repository URL: [https://github.com/nicholashanna2/CSI3150Final](https://github.com/nicholashanna2/CSI3150Final)**  
 **1\. Technical Report & User Manual**   
 **1.1 Project Overview (3 pts)**   
 This application is an online shopping app. It showcases the capabilities of React, as well as the logic learned throughout the course.   

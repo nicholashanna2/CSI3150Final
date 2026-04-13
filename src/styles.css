@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e2f;
+  color: white;
+  padding: 15px 30px;
+}
+
+/* Layout container */
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  align-items: start;
+}
+
+/* PRODUCTS GRID */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+/* CARD (NO LAYOUT SHIFT EVER) */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  transform: translateZ(0);
+  will-change: transform;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  min-height: 420px;   /* ✅ FIX: allows more space */
+  overflow: visible;   /* ✅ FIX: prevents cutting buttons */
+
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* SAFE HOVER (VISUAL ONLY — NO LAYOUT IMPACT) */
+.card:hover {
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+  transform: scale(1.02);
+}
+
+/* IMAGE (LOCKED SIZE) */
+.product-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* TEXT */
+.card h3 {
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+/* BUTTONS */
+button {
+  border: none;
+  padding: 8px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* COLORS */
+.add-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.wishlist-btn {
+  background: #ff4081;
+  color: white;
+}
+
+.view-btn {
+  background: #2196f3;
+  color: white;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* FILTER */
+.filter-bar {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* CART */
+.cart {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* WISHLIST */
+.wishlist {
+  margin-top: 20px;
+}
+
+/* MODAL (ABSOLUTE ISOLATION — NO INTERACTION WITH GRID) */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+/* MODAL BOX */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+
+  position: relative;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  margin-top: 10px;
+  background: #e53935;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
